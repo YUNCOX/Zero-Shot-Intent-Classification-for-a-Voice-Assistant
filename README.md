@@ -7,7 +7,6 @@ This project implements **Task 13: Zero-Shot Intent Classification for a Voice A
 ## Live Demo
 
 - Streamlit App: [zero-shot-intent-classification-for-a-voice-assistant.streamlit.app](https://zero-shot-intent-classification-for-a-voice-assistant.streamlit.app)
-- GitHub Repository: [YUNCOX/Zero-Shot-Intent-Classification-for-a-Voice-Assistant](https://github.com/YUNCOX/Zero-Shot-Intent-Classification-for-a-Voice-Assistant)
 
 ## Academic Information
 
