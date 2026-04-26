@@ -88,6 +88,29 @@ Because the intent list, hypothesis template, and input text stay constant, the 
 - confidence distribution
 - practical responsiveness
 
+## Results
+
+- Held-out evaluation set: `28` unseen utterances across `7` intent classes
+- Measured local result for `valhalla/distilbart-mnli-12-3`: **100.00% accuracy (28/28)**
+- The primary baseline model `facebook/bart-large-mnli` is available in the deployed Streamlit app for qualitative comparison through the built-in ablation selector
+
+### Demo Prediction Examples
+
+- `It's way too dark in this room.` -> `DimLights`
+- `Set a timer for 20 minutes.` -> `SetTimer`
+- `Send a message to Ali saying I'll be late.` -> `SendMessage`
+- `Will it rain this afternoon?` -> `GetWeather`
+
+### Reproducibility Note
+
+Run the bundled script below to reproduce the held-out evaluation inside the repository:
+
+```bash
+python scripts/evaluate_models.py
+```
+
+Because the held-out set in this repository is intentionally small and curated for the assignment demo, these results should be presented as **project evaluation results**, not as a broad production benchmark.
+
 ## Notes for the Assignment Report
 
 - The classifier is **zero-shot**, so it does not require task-specific supervised training on the 7 intent classes.
