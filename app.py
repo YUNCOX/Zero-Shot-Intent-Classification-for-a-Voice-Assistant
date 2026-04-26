@@ -98,6 +98,15 @@ def main() -> None:
     )
 
     selected_model = MODEL_REGISTRY[selected_model_label]
+
+    # Community Cloud has finite memory, so when the user switches models we
+    # clear the previous cached pipeline and keep only the currently selected
+    # model warm in memory.
+    previous_model_id = st.session_state.get("active_model_id")
+    if previous_model_id and previous_model_id != selected_model["model_id"]:
+        load_zero_shot_pipeline.clear()
+    st.session_state["active_model_id"] = selected_model["model_id"]
+
     st.sidebar.info(f"**Model ID:** `{selected_model['model_id']}`")
     st.sidebar.caption(selected_model["summary"])
 
