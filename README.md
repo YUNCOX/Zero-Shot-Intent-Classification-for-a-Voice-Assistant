@@ -8,6 +8,10 @@ This project implements **Task 13: Zero-Shot Intent Classification for a Voice A
 
 - Streamlit App: [zero-shot-intent-classification-for-a-voice-assistant.streamlit.app](https://zero-shot-intent-classification-for-a-voice-assistant.streamlit.app)
 
+## Screenshot
+
+![Streamlit App Screenshot](assets/screenshots/streamlit-home.png)
+
 ## Academic Information
 
 - Student: `YUNCOX`
@@ -44,6 +48,9 @@ The application classifies each utterance into one of these seven intents:
 .
 |-- .streamlit/
 |   `-- config.toml
+|-- assets/
+|   `-- screenshots/
+|       `-- streamlit-home.png
 |-- app.py
 |-- intent_config.py
 |-- requirements.txt
@@ -52,6 +59,7 @@ The application classifies each utterance into one of these seven intents:
 |-- data/
 |   `-- held_out_intents.json
 `-- scripts/
+    |-- evaluate_public_benchmarks.py
     `-- evaluate_models.py
 ```
 
@@ -75,6 +83,17 @@ python scripts/evaluate_models.py
 
 This evaluation script uses a small held-out set of unseen utterances stored in `data/held_out_intents.json` and reports the accuracy of both models.
 
+## Run the Public SNIPS / ATIS Benchmark
+
+```bash
+python scripts/evaluate_public_benchmarks.py --dataset snips --model ablation --max-examples 200
+python scripts/evaluate_public_benchmarks.py --dataset atis --model ablation --max-examples 200
+```
+
+Use `--model all` to compare both models, or `--max-examples 0` to evaluate the full public test split.
+
+`SNIPS` is the closer voice-assistant benchmark, while `ATIS` acts as a stronger cross-domain generalization test.
+
 ## How the Ablation Study Works
 
 The ablation study is built directly into the Streamlit sidebar. The user keeps the same 7 intents and the same input command, but switches the inference model between:
@@ -93,6 +112,7 @@ Because the intent list, hypothesis template, and input text stay constant, the 
 - Held-out evaluation set: `28` unseen utterances across `7` intent classes
 - Measured local result for `valhalla/distilbart-mnli-12-3`: **100.00% accuracy (28/28)**
 - The primary baseline model `facebook/bart-large-mnli` is available in the deployed Streamlit app for qualitative comparison through the built-in ablation selector
+- A real public benchmark script is included for the SNIPS test split and the ATIS test split using official Hugging Face dataset sources
 
 ### Demo Prediction Examples
 
