@@ -17,7 +17,7 @@ This project implements **Task 13: Zero-Shot Intent Classification for a Voice A
 - Student: `Mohammed Natiq Hilo`
 - University: `Al-Farabi University`
 - Course: `Artificial Intelligence and Applications`
-- Supervisor / Instructor: `Dr. Almuntadher Alwhelat`
+- Supervisor / Instructor: `Dr. Almuntadher Mahmood`
 
 ## Features
 
