@@ -1,6 +1,20 @@
 # Zero-Shot Intent Classification for a Voice Assistant
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://zero-shot-intent-classification-for-a-voice-assistant.streamlit.app)
+
 This project implements **Task 13: Zero-Shot Intent Classification for a Voice Assistant** as a Streamlit web app using Hugging Face Transformers. The system maps unseen natural-language commands to one of seven smart-home intents **without task-specific training** by using the `zero-shot-classification` pipeline.
+
+## Live Demo
+
+- Streamlit App: [zero-shot-intent-classification-for-a-voice-assistant.streamlit.app](https://zero-shot-intent-classification-for-a-voice-assistant.streamlit.app)
+- GitHub Repository: [YUNCOX/Zero-Shot-Intent-Classification-for-a-Voice-Assistant](https://github.com/YUNCOX/Zero-Shot-Intent-Classification-for-a-Voice-Assistant)
+
+## Academic Information
+
+- Student: `YUNCOX`
+- University: `Al-Farabi University`
+- Course: `Artificial Intelligence and Applications`
+- Supervisor / Instructor: `Almuntadher Alwhelat`
 
 ## Features
 
@@ -29,15 +43,17 @@ The application classifies each utterance into one of these seven intents:
 
 ```text
 .
-├── app.py
-├── intent_config.py
-├── requirements.txt
-├── README.md
-├── .gitignore
-├── data/
-│   └── held_out_intents.json
-└── scripts/
-    └── evaluate_models.py
+|-- .streamlit/
+|   `-- config.toml
+|-- app.py
+|-- intent_config.py
+|-- requirements.txt
+|-- README.md
+|-- .gitignore
+|-- data/
+|   `-- held_out_intents.json
+`-- scripts/
+    `-- evaluate_models.py
 ```
 
 ## Installation
