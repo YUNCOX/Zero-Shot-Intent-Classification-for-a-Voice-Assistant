@@ -1,0 +1,114 @@
+[
+  {
+    "text": "Play some relaxing piano in the background.",
+    "label": "PlayMusic"
+  },
+  {
+    "text": "Can you start my workout playlist?",
+    "label": "PlayMusic"
+  },
+  {
+    "text": "I want to hear some music while I cook.",
+    "label": "PlayMusic"
+  },
+  {
+    "text": "Put on a few pop songs for me.",
+    "label": "PlayMusic"
+  },
+  {
+    "text": "Turn on the TV in the living room.",
+    "label": "TurnOnTV"
+  },
+  {
+    "text": "Power up the television, please.",
+    "label": "TurnOnTV"
+  },
+  {
+    "text": "Switch the TV on for the game.",
+    "label": "TurnOnTV"
+  },
+  {
+    "text": "Start the television in the bedroom.",
+    "label": "TurnOnTV"
+  },
+  {
+    "text": "Will it rain this afternoon?",
+    "label": "GetWeather"
+  },
+  {
+    "text": "What's the forecast for tomorrow morning?",
+    "label": "GetWeather"
+  },
+  {
+    "text": "Do I need a jacket outside tonight?",
+    "label": "GetWeather"
+  },
+  {
+    "text": "Tell me how hot it will be today.",
+    "label": "GetWeather"
+  },
+  {
+    "text": "Set a timer for ten minutes.",
+    "label": "SetTimer"
+  },
+  {
+    "text": "Start a 45-minute countdown for the oven.",
+    "label": "SetTimer"
+  },
+  {
+    "text": "I need a timer running for half an hour.",
+    "label": "SetTimer"
+  },
+  {
+    "text": "Begin a three-minute timer for tea.",
+    "label": "SetTimer"
+  },
+  {
+    "text": "Lower the lights a little bit.",
+    "label": "DimLights"
+  },
+  {
+    "text": "It's too bright in here, dim the room.",
+    "label": "DimLights"
+  },
+  {
+    "text": "Can you make the lights softer?",
+    "label": "DimLights"
+  },
+  {
+    "text": "Reduce the brightness in the kitchen.",
+    "label": "DimLights"
+  },
+  {
+    "text": "Wake me up at 6:30 tomorrow morning.",
+    "label": "SetAlarm"
+  },
+  {
+    "text": "Set an alarm for 7 AM.",
+    "label": "SetAlarm"
+  },
+  {
+    "text": "I need an alarm for my meeting in one hour.",
+    "label": "SetAlarm"
+  },
+  {
+    "text": "Schedule an alarm for sunrise.",
+    "label": "SetAlarm"
+  },
+  {
+    "text": "Send a message to Ali saying I'll be late.",
+    "label": "SendMessage"
+  },
+  {
+    "text": "Text Sarah and tell her dinner is ready.",
+    "label": "SendMessage"
+  },
+  {
+    "text": "Can you message the family group for me?",
+    "label": "SendMessage"
+  },
+  {
+    "text": "Write to Omar that I arrived home.",
+    "label": "SendMessage"
+  }
+]
